@@ -6883,6 +6883,16 @@ var __install = function __install(Vue, options) {
     bind: function bind(el, binding, vnode) {
       if (!el.$scrollbar) {
         el.$scrollbar = smooth_scrollbar__WEBPACK_IMPORTED_MODULE_0__["default"].init(el, Object.assign({}, options, binding.value));
+        el.$scrollbar.addListener(function (status) {
+          // if (vnode.componentInstance) {
+          //     vnode.componentInstance.$emit('scroll', { detail: status }); // use {detail:} to be uniform
+          // } else {
+          //     vnode.elm.dispatchEvent(new CustomEvent('scroll', { detail: status }));
+          // }
+          el.dispatchEvent(new CustomEvent('scroll', {
+            detail: status
+          }));
+        });
       }
     },
     unbind: function unbind(el) {

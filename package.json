@@ -1,7 +1,7 @@
 {
-  "name": "@morioh/v-scrollbar",
+  "name": "@morioh/v-smooth-scrollbar",
   "description": "Smooth Scrollbar directive for Vue.js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Morioh-Lab",
   "main": "./dist/scrollbar.min.js",
   "scripts": {
@@ -10,11 +10,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Morioh-Lab/v-scrollbar.git"
+    "url": "git+https://github.com/Morioh-Lab/v-smooth-scrollbar.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Morioh-Lab/v-scrollbar/issues"
+    "url": "https://github.com/Morioh-Lab/v-smooth-scrollbar/issues"
   },
   "homepage": "https://morioh.com/p/c767f850bb5b",
   "keywords": [
@@ -24,7 +24,8 @@
     "vue scrollbar",
     "vue scrollbar directive",
     "vue-scrollbar",
-    "v-scrollbar"
+    "v-scrollbar",
+    "v-smooth-scrollbar"
   ],
   "dependencies": {
     "smooth-scrollbar": "^8.5.2",
